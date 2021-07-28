@@ -1,0 +1,251 @@
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 	<title>RECEIVER 2</title>
+
+        <!-- Vendor styles -->
+		<link rel="icon" type="image/ico" href="img/BEL.ico">
+        <link rel="stylesheet" href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="vendors/bower_components/animate.css/animate.min.css">
+        <link rel="stylesheet" href="vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css">
+        
+        <!-- App styles -->
+        <link rel="stylesheet" href="css/app.min.css">
+		<link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body data-sa-theme="2">
+        <main class="main">
+            <div class="page-loader">
+                <div class="page-loader__spinner">
+                    <svg viewBox="25 25 50 50">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+                </div>
+            </div>
+			
+			<header class="header">
+                <div class="navigation-trigger hidden-xl-up" data-sa-action="aside-open" data-sa-target=".sidebar">
+                    <i class="zmdi zmdi-menu"></i>
+                </div>
+
+                <div class="logo hidden-sm-down">
+                    <h1><a href="index.html">GNSS RECEIVER SYSTEM</a></h1>
+                </div>
+
+                <ul class="top-nav">
+                    <li class="hidden-xl-up"><a href="#" data-sa-action="search-open"><i class="zmdi zmdi-search"></i></a></li>
+
+<!--                 NOTIFICATIONS
+
+                    <li class="dropdown top-nav__notifications">
+                        <a href="#" data-toggle="dropdown" class="top-nav__notify">
+                            <i class="zmdi zmdi-notifications"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu--block">
+                            <div class="dropdown-header">
+                                Notifications
+
+                                <div class="actions">
+                                    <a href="#" class="actions__item zmdi zmdi-check-all" data-sa-action="notifications-clear"></a>
+                                </div>
+                            </div>
+
+                            <div class="listview listview--hover">
+                                <div class="listview__scroll scrollbar-inner">
+                                    <a href="#" class="listview__item">
+                                        <img src="demo/img/profile-pics/1.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">David Belle</div>
+                                            <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="listview__item">
+                                        <img src="demo/img/profile-pics/2.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Jonathan Morris</div>
+                                            <p>Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="p-1"></div>
+                            </div>
+                        </div>
+                    </li>
+-->
+
+                    <li class="dropdown hidden-xs-down">
+                        <a href="#" data-toggle="dropdown"><i class="zmdi zmdi-more-vert"></i></a>
+
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-item theme-switch">
+                                Theme Switch
+
+                                <div class="btn-group btn-group--colors mt-2 d-block" data-toggle="buttons">
+                                    <label class="btn active border-0" style="background-color: #273C5B"><input type="radio" value="2" autocomplete="off" checked></label>
+									 <label class="btn border-0" style="background-color: #234d6d"><input type="radio" value="7" autocomplete="off"></label>
+                                    <label class="btn border-0" style="background-color: #383844"><input type="radio" value="4" autocomplete="off"></label>
+									<br>
+                                </div>
+                            </div>
+                            <a href="#" class="dropdown-item" data-sa-action="fullscreen">Fullscreen</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="hidden-md-down">
+					<img src="img/SVG/BEL.svg" id="blogo">
+                </div>
+            </header>
+
+             <aside class="sidebar">
+                <div class="scrollbar-inner">
+                    <ul class="navigation">
+                        <li class="navigation"><a href="index.html"><i class="zmdi zmdi-home"></i> Home</a></li>
+
+                        <li class="@@widgetactive"><a href="RX1.html"><i class="zmdi zmdi-gps-dot"></i> RECEIVER 1</a></li>
+
+                        <li class="navigation__active"><a href="RX2.html"><i class="zmdi zmdi-gps-dot"></i> RECEIVER 2</a></li>
+						
+						<li class="@@widgetactive"><a href="RX3.html"><i class="zmdi zmdi-gps-dot"></i> RECEIVER 3</a></li>
+						
+						<li class="@@widgetactive"><a href="RX4.html"><i class="zmdi zmdi-gps-dot"></i> RECEIVER 4</a></li>
+						
+						<li class="@@widgetactive"><a href="NW.html"><i class="zmdi zmdi-network-setting"></i> SYSTEM SETTINGS</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="content">
+				<header class="content__title">
+                    <h3>RECEIVER 2</h3> <button class="btn btn-success btn--icon-text" id="rx1B"><i class="zmdi zmdi-check"></i> Best Receiver</button>
+                     <small>Web page for the Receiver 2	 Information</small>
+                </header>
+				
+				<div class="row quick-stats">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="quick-stats__item">
+                            <div class="quick-stats__info">
+                                <h3 id="gpsl">02</h3>
+                                <small>GPS Satellites locked</small>
+                            </div>
+                            <div class="peity">
+								<svg id="gpsat" xmlns="http://www.w3.org/2000/svg" width="70" viewBox="0 0 512 512" height="70" fill="red"><path d="m 267.12 218.02 l 130.15 130.15 l -47.34 47.34 l -130.15 -130.15 z" /><g id="gpsi" fill="none" stroke="red" stroke-width="16"><path d="m 12.721 285.46 c 9.814 66.54 50.27 100.88 112.41 112.41" /><path d="m 60.05 285.46 c 5.472 38.03 25 59.948 65.08 65.08"/><path d="m 95.55 285.46 c 5.632 20.687 16.601 27.37 29.581 29.581" /></g><path d="m 145.24 240.49 l -17.749 41.41 l 41.41 -17.749"/><path d="m 197.7 290.05 c -8.169 8.169 -32.01 -2.426 -53.25 -23.666 -21.241 -21.241 -31.834 -45.08 -23.666 -53.25 8.169 -8.169 32.01 2.426 53.25 23.666 21.241 21.241 31.834 45.08 23.666 53.25 z"/><path d="m 209.14 143.46 l 10.738 10.56 l 5.829 -5.829 l 35.498 35.498 l -5.917 5.917 l 11.832 11.832 l -63.07 62.21 l -58.13 -58.13 z"/><path d="m 147.61 100.86 l -45.87 45.87"/><path d="m 103.83 57.08 l -45.772 45.502"/><path d="m 61.23 12.12 l 130.15 130.15 l -47.34 47.34 l -130.15 -130.15 z"/></svg>
+							</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="quick-stats__item">
+                            <div class="quick-stats__info">
+                                <h3 id="glsl">0</h3>
+                                <small>GLONASS Satellite locked</small>
+                            </div>
+
+                            <div class="peity">
+								<svg id="glsat" xmlns="http://www.w3.org/2000/svg" width="70" viewBox="0 0 512 512" height="70" fill="red"><path d="m 267.12 218.02 l 130.15 130.15 l -47.34 47.34 l -130.15 -130.15 z" /><g id="glsi" fill="none" stroke="red" stroke-width="16"><path d="m 12.721 285.46 c 9.814 66.54 50.27 100.88 112.41 112.41" /><path d="m 60.05 285.46 c 5.472 38.03 25 59.948 65.08 65.08"/><path d="m 95.55 285.46 c 5.632 20.687 16.601 27.37 29.581 29.581" /></g><path d="m 145.24 240.49 l -17.749 41.41 l 41.41 -17.749"/><path d="m 197.7 290.05 c -8.169 8.169 -32.01 -2.426 -53.25 -23.666 -21.241 -21.241 -31.834 -45.08 -23.666 -53.25 8.169 -8.169 32.01 2.426 53.25 23.666 21.241 21.241 31.834 45.08 23.666 53.25 z"/><path d="m 209.14 143.46 l 10.738 10.56 l 5.829 -5.829 l 35.498 35.498 l -5.917 5.917 l 11.832 11.832 l -63.07 62.21 l -58.13 -58.13 z"/><path d="m 147.61 100.86 l -45.87 45.87"/><path d="m 103.83 57.08 l -45.772 45.502"/><path d="m 61.23 12.12 l 130.15 130.15 l -47.34 47.34 l -130.15 -130.15 z"/></svg>
+							</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="quick-stats__item">
+                            <div class="quick-stats__info">
+                                <h3 id="irsl">01</h3>
+                                <small>IRNSS Satellite locked</small>
+                            </div>
+
+                            <div class="peity">
+								<svg id="irsat" xmlns="http://www.w3.org/2000/svg" width="70" viewBox="0 0 512 512" height="70" fill="red"><path d="m 267.12 218.02 l 130.15 130.15 l -47.34 47.34 l -130.15 -130.15 z" /><g id="irsi" fill="none" stroke="red" stroke-width="16"><path d="m 12.721 285.46 c 9.814 66.54 50.27 100.88 112.41 112.41" /><path d="m 60.05 285.46 c 5.472 38.03 25 59.948 65.08 65.08"/><path d="m 95.55 285.46 c 5.632 20.687 16.601 27.37 29.581 29.581" /></g><path d="m 145.24 240.49 l -17.749 41.41 l 41.41 -17.749"/><path d="m 197.7 290.05 c -8.169 8.169 -32.01 -2.426 -53.25 -23.666 -21.241 -21.241 -31.834 -45.08 -23.666 -53.25 8.169 -8.169 32.01 2.426 53.25 23.666 21.241 21.241 31.834 45.08 23.666 53.25 z"/><path d="m 209.14 143.46 l 10.738 10.56 l 5.829 -5.829 l 35.498 35.498 l -5.917 5.917 l 11.832 11.832 l -63.07 62.21 l -58.13 -58.13 z"/><path d="m 147.61 100.86 l -45.87 45.87"/><path d="m 103.83 57.08 l -45.772 45.502"/><path d="m 61.23 12.12 l 130.15 130.15 l -47.34 47.34 l -130.15 -130.15 z"/></svg>
+							</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="quick-stats__item">
+                            <div class="quick-stats__info">
+                                <h3 id="hysl">3</h3>
+                                <small>HYBRID Satellite locked</small>
+                            </div>
+
+                            <div class="peity">
+								<svg id="hysat" xmlns="http://www.w3.org/2000/svg" width="70" viewBox="0 0 512 512" height="70" fill="red"><path d="m 267.12 218.02 l 130.15 130.15 l -47.34 47.34 l -130.15 -130.15 z" /><g id="hysi" fill="none" stroke="red" stroke-width="16"><path d="m 12.721 285.46 c 9.814 66.54 50.27 100.88 112.41 112.41" /><path d="m 60.05 285.46 c 5.472 38.03 25 59.948 65.08 65.08"/><path d="m 95.55 285.46 c 5.632 20.687 16.601 27.37 29.581 29.581" /></g><path d="m 145.24 240.49 l -17.749 41.41 l 41.41 -17.749"/><path d="m 197.7 290.05 c -8.169 8.169 -32.01 -2.426 -53.25 -23.666 -21.241 -21.241 -31.834 -45.08 -23.666 -53.25 8.169 -8.169 32.01 2.426 53.25 23.666 21.241 21.241 31.834 45.08 23.666 53.25 z"/><path d="m 209.14 143.46 l 10.738 10.56 l 5.829 -5.829 l 35.498 35.498 l -5.917 5.917 l 11.832 11.832 l -63.07 62.21 l -58.13 -58.13 z"/><path d="m 147.61 100.86 l -45.87 45.87"/><path d="m 103.83 57.08 l -45.772 45.502"/><path d="m 61.23 12.12 l 130.15 130.15 l -47.34 47.34 l -130.15 -130.15 z"/></svg>
+							</div>
+                        </div>
+                    </div>
+                </div>
+           
+                <div class="row quick-stats">
+                    <div class="col-md-7">
+				 	<div class="card">
+                    <div class="card-body">
+						<h3>Dilution Of Precision</h3>
+						<br><hr><br>
+						<div class="dop center">
+					<div class="test rounded-circle edop red" id="pdopp"><div class="dtit">PDOP<br><span id="pdop">8.25</span></div></div>
+					<div class="test rounded-circle edop orange" id="hdopp"><div class="dtit">HDOP<br><span id="hdop">4.02</span></div></div>
+					<div class="test rounded-circle orange" id="tdopp"><div class="dtit">TDOP<br><span id="tdop">4.00</span></div></div>
+						</div><br>
+                    </div>
+                	</div>
+                    </div> 
+					
+					<div class="col-md-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Nav Info</h3>
+                                <br><hr><br>
+                                <div class="navInfo">
+                                     <h4>Latitude: <span id="Lat"></span></h4><br>
+                                     <h4>Longitude: <span id="Lon"></span></h4><br>
+                                     <h4>Altitude: <span id="Alt"></span></h4><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<footer class="footer hidden-xs-down">
+                    <p>© BHARAT ELECTRONICS LIMITED.</p>
+                </footer>
+            </section>
+        </main>
+
+        <!-- Javascript -->
+        <!-- Vendors -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/popper.js/dist/umd/popper.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="vendors/bower_components/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="vendors/bower_components/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+
+        <script src="vendors/bower_components/salvattore/dist/salvattore.min.js"></script>
+        <script src="vendors/bower_components/flot/jquery.flot.js"></script>
+        <script src="vendors/bower_components/flot/jquery.flot.resize.js"></script>
+        <script src="vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
+        <script src="vendors/bower_components/jqvmap/dist/jquery.vmap.min.js"></script>
+        <script src="vendors/bower_components/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+        <script src="vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+        <script src="vendors/bower_components/peity/jquery.peity.min.js"></script>
+        <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+        <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+
+        <!-- Charts and maps-->
+        <script src="demo/js/flot-charts/curved-line.js"></script>
+        <script src="demo/js/flot-charts/line.js"></script>
+        <script src="demo/js/flot-charts/dynamic.js"></script>
+        <script src="demo/js/flot-charts/chart-tooltips.js"></script>
+        <script src="demo/js/other-charts.js"></script>
+        <script src="demo/js/jqvmap.js"></script>
+
+        <!-- App functions and actions -->
+        <script src="js/app.min.js"></script>
+    </body>
+
+<!--Designed By ALpha-->
+</html>

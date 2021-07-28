@@ -1,0 +1,372 @@
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 	<title>System Settings</title>
+
+        <!-- Vendor styles -->
+		<link rel="icon" type="image/ico" href="img/BEL.ico">
+        <link rel="stylesheet" href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="vendors/bower_components/animate.css/animate.min.css">
+        <link rel="stylesheet" href="vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css">
+        <link rel="stylesheet" href="vendors/bower_components/sweetalert2/dist/sweetalert2.min.css">
+        
+        <!-- App styles -->
+        <link rel="stylesheet" href="css/app.min.css">
+		<link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body data-sa-theme="2">
+        <main class="main">
+            <div class="page-loader">
+                <div class="page-loader__spinner">
+                    <svg viewBox="25 25 50 50">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+                </div>
+            </div>
+			
+			<header class="header">
+                <div class="navigation-trigger hidden-xl-up" data-sa-action="aside-open" data-sa-target=".sidebar">
+                    <i class="zmdi zmdi-menu"></i>
+                </div>
+
+                <div class="logo hidden-sm-down">
+                    <h1><a href="index.html">GNSS RECEIVER SYSTEM</a></h1>
+                </div>
+
+                <ul class="top-nav">
+                    <li class="hidden-xl-up"><a href="#" data-sa-action="search-open"><i class="zmdi zmdi-search"></i></a></li>
+
+<!--                 NOTIFICATIONS
+
+                    <li class="dropdown top-nav__notifications">
+                        <a href="#" data-toggle="dropdown" class="top-nav__notify">
+                            <i class="zmdi zmdi-notifications"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu--block">
+                            <div class="dropdown-header">
+                                Notifications
+
+                                <div class="actions">
+                                    <a href="#" class="actions__item zmdi zmdi-check-all" data-sa-action="notifications-clear"></a>
+                                </div>
+                            </div>
+
+                            <div class="listview listview--hover">
+                                <div class="listview__scroll scrollbar-inner">
+                                    <a href="#" class="listview__item">
+                                        <img src="demo/img/profile-pics/1.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">David Belle</div>
+                                            <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="listview__item">
+                                        <img src="demo/img/profile-pics/2.jpg" class="listview__img" alt="">
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Jonathan Morris</div>
+                                            <p>Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="p-1"></div>
+                            </div>
+                        </div>
+                    </li>
+-->
+
+                    <li class="dropdown hidden-xs-down">
+                        <a href="#" data-toggle="dropdown"><i class="zmdi zmdi-more-vert"></i></a>
+
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-item theme-switch">
+                                Theme Switch
+
+                                <div class="btn-group btn-group--colors mt-2 d-block" data-toggle="buttons">
+                                    <label class="btn active border-0" style="background-color: #273C5B"><input type="radio" value="2" autocomplete="off" checked></label>
+									 <label class="btn border-0" style="background-color: #234d6d"><input type="radio" value="7" autocomplete="off"></label>
+                                    <label class="btn border-0" style="background-color: #383844"><input type="radio" value="4" autocomplete="off"></label>
+									<br>
+                                </div>
+                            </div>
+                            <a href="#" class="dropdown-item" data-sa-action="fullscreen">Fullscreen</a>
+                        </div>
+                    </li>
+                </ul>
+
+               <div class="hidden-md-down">
+					<img src="img/SVG/BEL.svg" id="blogo">
+                </div>
+            </header>
+
+             <aside class="sidebar">
+                <div class="scrollbar-inner">
+                    <ul class="navigation">
+                        <li class="navigation"><a href="index.html"><i class="zmdi zmdi-home"></i> Home</a></li>
+
+                        <li class="navigation__active"><a href="RX1.html"><i class="zmdi zmdi-gps-dot"></i> RECEIVER 1</a></li>
+
+                        <li class="@@widgetactive"><a href="RX2.html"><i class="zmdi zmdi-gps-dot"></i> RECEIVER 2</a></li>
+						
+						<li class="@@widgetactive"><a href="RX3.html"><i class="zmdi zmdi-gps-dot"></i> RECEIVER 3</a></li>
+
+						<li class="@@widgetactive"><a href="RX4.html"><i class="zmdi zmdi-gps-dot"></i> RECEIVER 4</a></li>
+						
+						<li class="navigation__active"><a href="NW.html"><i class="zmdi zmdi-network-setting"></i> SYSTEM SETTINGS</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="content">
+				<header class="content__title">
+                    <h3>System Settings</h3>
+                    <small>Configure various parameters of the GRS</small>
+                </header>
+                <div class="row quick-stats">
+                    <div class="col-md-6">
+				 	<div class="card">
+                    <div class="card-body">
+						<h3>IP Address Configuration</h3>
+						<br><br><br>
+						
+							 <div class="form-group">
+								 <div class="col-sm-6">
+                                <input type="text" class="form-control form-control-lg" placeholder="IP Address" id="ipAddr">
+                                <i class="form-group__bar"></i> 
+								 </div>
+                            </div>
+						<div class="col-sm-6">
+						<div class="form-group">
+                                <input type="text" class="form-control form-control-lg" placeholder="Subnet Mask" id="netMsk">
+                                <i class="form-group__bar"></i> 
+                            </div></div>
+						<div class="col-sm-6">
+						<div class="form-group">
+                                <input type="text" class="form-control form-control-lg" placeholder="Gateway Address" id="gatWay" title="Leave blank if you don't know" data-toggle="tooltip" data-placement="right">
+                                <i class="form-group__bar"></i> 
+                            </div></div><br><br>
+						<center><button type="button" class="btn btn-secondary" onclick="setIp()">Set Ip</button></center>
+						<br><br><br>
+                    </div>
+                	</div>
+                    </div> 
+					
+					<div class="col-md-6">
+						    <div class="card">
+                    <div class="card-body">
+						<h3>Lever Arm Correction</h3>
+						<br><br><br>
+						<div class="navInfo col-sm-12">
+							 <div class="form-group col-sm-12">
+                                 <div class="row">
+								 <div class="col-sm-4">
+                                <input type="text" class="form-control form-control-lg" placeholder="Enter Delta Lat">
+                                <i class="form-group__bar"></i> 
+								 </div>
+                                 <div class="col-sm-4">
+                                <input type="text" class="form-control form-control-lg" placeholder="Enter Delta Long">
+                                <i class="form-group__bar"></i> 
+								 </div>
+                                 <div class="col-sm-4">
+                                <input type="text" class="form-control form-control-lg" placeholder="Enter Delta Alt">
+                                <i class="form-group__bar"></i> 
+								 </div></div><br><br>
+								 <center><button type="button" class="btn btn-secondary">Correct</button></center>
+                            </div>
+						</div>
+                    </div>
+                	</div>
+					<div class="card">
+                    <div class="card-body">
+						<h3>Mode Configuration</h3>
+						<br><br><br>
+						<div class="mode">
+							<label class="custom-control custom-checkbox">
+                                <input type="radio" name="radio-inline" class="custom-control-input" onclick="setMode('1')" id="1">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">HYBRID</span>
+                            </label>
+
+                            <label class="custom-control custom-checkbox">
+                                <input type="radio" name="radio-inline" class="custom-control-input" onclick="setMode('2')" id="2">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">IRNSS RS</span>
+                            </label>
+
+                            <label class="custom-control custom-checkbox">
+                                <input type="radio" name="radio-inline" class="custom-control-input" onclick="setMode('3')" id="3">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">SIMULATOR</span>
+                            </label>
+						</div>
+                    </div>
+                	</div>
+                    </div>
+				</div>
+				<footer class="footer hidden-xs-down">
+                    <p>© BHARAT ELECTRONICS LIMITED.</p>
+                </footer>
+            </section>
+        </main>
+
+        <!-- Javascript -->
+        <!-- Vendors -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/popper.js/dist/umd/popper.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="vendors/bower_components/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="vendors/bower_components/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+
+        <script src="vendors/bower_components/salvattore/dist/salvattore.min.js"></script>
+        <script src="vendors/bower_components/flot/jquery.flot.js"></script>
+        <script src="vendors/bower_components/flot/jquery.flot.resize.js"></script>
+        <script src="vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
+        <script src="vendors/bower_components/jqvmap/dist/jquery.vmap.min.js"></script>
+        <script src="vendors/bower_components/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+        <script src="vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+        <script src="vendors/bower_components/peity/jquery.peity.min.js"></script>
+        <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+        <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+        <script src="vendors/bower_components/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+        <script src="vendors/bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
+
+        <!-- Charts and maps-->
+        <script src="demo/js/flot-charts/curved-line.js"></script>
+        <script src="demo/js/flot-charts/line.js"></script>
+        <script src="demo/js/flot-charts/dynamic.js"></script>
+        <script src="demo/js/flot-charts/chart-tooltips.js"></script>
+        <script src="demo/js/other-charts.js"></script>
+        <script src="demo/js/jqvmap.js"></script>
+
+        <!-- App functions and actions -->
+        <script src="js/app.min.js"></script>
+		<script>
+            
+            const setIp = function(){
+                const ip = document.querySelector("#ipAddr").value;
+                const nm = document.querySelector("#netMsk").value;
+                var gw = document.querySelector("#gatWay").value;
+				
+                var bcast=ip;
+                var bcast=bcast.split(".");
+                bcast[bcast.length-1]="255";
+                var bcast_ip=bcast.join(".");
+
+				var ipformat = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+                            
+                if(gw.length <=0 ){
+                    var tgw=ip;
+                    tgw=tgw.split(".");
+                    tgw[tgw.length-1]="1";
+                    gw=tgw.join(".");
+                }
+ 
+                if(ip.match(ipformat)){
+					$.ajax({
+                        method:"post",
+                        url:"php/setIp.php",
+                        data:{ip:ip,nm:nm,gw:gw,bcast:bcast_ip},
+                        success:function(data){
+                            //alert(data);
+                        }
+                    })
+				}
+                else{
+                        swal({
+                            title: 'ENTER A VALID IP',
+                            text: 'IP address and Subnet Mask is required to configure the ETHERNET',
+                            type: 'warning',
+                            buttonsStyling: false,
+                            confirmButtonClass: 'btn btn-sm btn-light',
+                            background: 'rgba(0, 0, 0, 0.96)'
+                        })
+                }
+            }
+			
+			const setMode = function(mode){
+				$.ajax({
+					method:"post",
+					url:"php/setMode.php",
+					data:{mode:mode},
+					success:function(data){
+                        //alert(data);
+						if(data.includes("success")){
+						    var nFrom = $(this).attr('data-from');
+							var nAlign = $(this).attr('data-align');
+							var nIcons = $(this).attr('data-icon');
+							var nType = $(this).attr('data-type');
+							var nAnimIn = $(this).attr('data-animation-in');
+							var nAnimOut = $(this).attr('data-animation-out');
+                            const msg = "Mode Changed Successfully!!";
+							notify(nFrom, nAlign, nIcons, "success", nAnimIn, nAnimOut, msg);
+						}
+                        else{
+                            var nFrom = $(this).attr('data-from');
+							var nAlign = $(this).attr('data-align');
+							var nIcons = $(this).attr('data-icon');
+							var nType = $(this).attr('data-type');
+							var nAnimIn = $(this).attr('data-animation-in');
+							var nAnimOut = $(this).attr('data-animation-out');
+                            const msg = "Unable to change the Mode";
+							notify(nFrom, nAlign, nIcons, "danger", nAnimIn, nAnimOut, msg);
+                        }
+					}
+				})
+			}
+			
+			function notify(from, align, icon, type, animIn, animOut, msg){
+                $.notify({
+                    icon: icon,
+                    title: '',
+                    message: msg,
+                    url: ''
+                },{
+                    element: 'body',
+                    type: type,
+                    allow_dismiss: true,
+                    placement: {
+                        from: from,
+                        align: align
+                    },
+                    offset: {
+                        x: 20,
+                        y: 20
+                    },
+                    spacing: 10,
+                    z_index: 1031,
+                    delay: 2500,
+                    timer: 1000,
+                    url_target: '_blank',
+                    mouse_over: false,
+                    animate: {
+                        enter: animIn,
+                        exit: animOut
+                    },
+                    template:   '<div data-notify="container" class="alert alert-dismissible alert-{0} alert--notify" role="alert" style:"font-size:20rem;">' +
+                                    '<span data-notify="icon"></span> ' +
+                                    '<span data-notify="title">{1}</span> ' +
+                                    '<span data-notify="message" style:"font-size:2rem;">{2}</span>' +
+                                    '<div class="progress" data-notify="progressbar">' +
+                                        '<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+                                    '</div>' +
+                                    '<a href="{3}" target="{4}" data-notify="url"></a>' +
+                                    '<button type="button" aria-hidden="true" data-notify="dismiss" class="close"><span>×</span></button>' +
+                                '</div>'
+                });
+            }
+            
+            $.get("php/readMode.php",function(data){
+                $("#"+data).attr('checked','true');
+            })
+
+		</script>
+    </body>
+
+<!--Designed By ALpha-->
+</html>

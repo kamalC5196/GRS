@@ -1,0 +1,76 @@
+.card{
+	margin-left: 5rem;
+/*	background-color: rgba(0,0,0,0.9);*/
+/*	transition: 0.3s ease;*/
+/*	cursor: pointer;*/
+/*	background-color: rgba(0,0,0,.2);*/
+
+}
+
+h3{
+	font-size: 2rem;
+	display: inline-block;
+}
+
+.quick-stats__item{
+	background: transparent;
+	box-shadow: none;
+}
+
+/*
+.card:hover{
+	transform: scale(1.04);
+	transition: 0.3s ease;
+}
+*/
+
+.peity{
+	display: inline-block;
+}
+
+.btn-success{
+	background: lime;
+	color: black;
+	margin-right: 1.7rem;
+	display: none;
+}
+
+hr{
+	display: block; 
+	border: 0.01rem solid rgba(255,255,255,0.3); 
+	width: 95%;
+}
+
+.center{
+	display:flex;
+	justify-content:center;
+}
+.edop{
+	margin: 0px 1.3rem;
+}
+.dtxt{
+	margin-top: 6rem;
+	font-size: 14px !important;
+}
+
+.RX1lkI,.RX2lkI,.RX3lkI,.RX4lkI{
+	display: none;
+}
+
+#blogo{
+	position: relative;
+	top: -2rem;
+}
+
+#modeI{
+	float: right;
+	font-size: 1.7em;
+}
+
+.vis{
+    display: inline-block;
+}
+
+.hide{
+    display: none;
+}
